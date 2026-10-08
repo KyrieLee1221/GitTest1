@@ -30,33 +30,48 @@
         {
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(364, 92);
+            button1.Location = new Point(298, 77);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(202, 54);
+            button1.Size = new Size(165, 45);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(364, 171);
+            button2.Location = new Point(298, 142);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(202, 65);
+            button2.Size = new Size(165, 54);
             button2.TabIndex = 1;
             button2.Text = "firsttest";
             button2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(311, 243);
+            button3.Name = "button3";
+            button3.Size = new Size(298, 76);
+            button3.TabIndex = 2;
+            button3.Text = "btnShow";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(11F, 24F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1028, 631);
+            ClientSize = new Size(841, 526);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -66,5 +81,6 @@
 
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }
